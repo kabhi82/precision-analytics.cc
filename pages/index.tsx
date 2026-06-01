@@ -44,11 +44,11 @@ export default function Home() {
           </p>
 
           <p style={{ marginTop: "20px", color: dark ? "#999" : "#666" }}>
-            Founded by Abhishek Kumar — Enterprise Data Architect (15+ years)
+            Founded by Abhishek Kumar — Enterprise Data Architect (19+ years)
           </p>
 
           <p style={{ marginTop: "10px", color: dark ? "#999" : "#666" }}>
-            Erlangen, Germany • +49 151 290 73 265 • abhishek_ku@yahoo.com •{" "}
+            Erlangen, Germany • +49 151 290 73 265 • abhishek.kumar@outlook.de •{" "}
             <a
               href="https://www.linkedin.com/in/abhishekku/"
               target="_blank"
@@ -119,48 +119,139 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FEATURED WORK */}
+       
+       {/* FEATURED WORK */}
         <section style={{ marginBottom: "60px" }}>
-          <h2 style={{ fontSize: "30px", color: accent }}>Featured Work</h2>
+          <h2 style={{ fontSize: "30px", color: accent }}>Companies I’ve Worked With</h2>
 
-          <div style={{ marginTop: "25px" }}>
-            <h3>Exyte GmbH — Enterprise Data Platform Modernization</h3>
-            <p>
-              Designed a Databricks + Azure Delta Lakehouse aligned with Data Mesh
-              principles, enabling domain‑driven analytics and unified governance.
-            </p>
+          {/* LOGO GRID */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+              gap: "30px",
+              marginTop: "30px",
+              alignItems: "center",
+              justifyItems: "center",
+            }}
+          >
+            {/* Exyte */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://cdn.phenompeople.com/CareerConnectResources/EGQEGGGLOBAL/images/210709_LOGO_Exyte_rgb_png1-1727264883385.png"
+                alt="Exyte Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                Exyte GmbH  
+              </p>
+            </div>
+
+            {/* Adidas */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://thfvnext.bing.com/th/id/OIP.HqgH-vlDy6nzZ0lADncGTgHaEK?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Adidas Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                Adidas AG
+              </p>
+            </div>
+
+            {/* Abl Solutions */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://thfvnext.bing.com/th/id/OIP.FJmlEHg1W6Ho_VOrWwI82gAAAA?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Abl Solutions Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                Abl Solutions
+              </p>
+            </div>
+
+            {/* EA */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://www.bing.com/th/id/OIP.gJ0aixbSRH8MGWDGG3rxuQHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                alt="EA Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                Electronic Arts
+              </p>
+            </div>
+
+            {/* Virgin Media */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://logosmarken.com/wp-content/uploads/2021/11/Virgin-Media-Logo-2012-2013.png"
+                alt="Virgin Media Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                Virgin Media
+              </p>
+            </div>
+
+            {/* BT */}
+            <div style={{ textAlign: "center" }}>
+              <img
+                src="https://images.seeklogo.com/logo-png/2/1/bt-group-logo-png_seeklogo-23100.png"
+                alt="BT Logo"
+                style={{ height: "50px", marginBottom: "10px" }}
+              />
+              <p style={{ fontSize: "14px", opacity: 0.8 }}>
+                BT Group
+              </p>
+            </div>
+
+          {/* Outokumpu */}
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="https://www.underconsideration.com/brandnew/archives/outokumpu_logo_detail.png"
+              alt="Outokumpu Logo"
+              style={{ height: "50px", marginBottom: "10px" }}
+            />
+            <p style={{ fontSize: "14px", opacity: 0.8 }}>Outokumpu</p>
           </div>
 
-          <div style={{ marginTop: "25px" }}>
-            <h3>Adidas AG — Cloud‑Native Analytics Transformation</h3>
-            <p>
-              Modernized BI ecosystem, engineered a 16TB Delta Lake, and built
-              real‑time CDC pipelines powering mission‑critical operations.
-            </p>
+
+          {/* Generali Insurance */}
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="https://thfvnext.bing.com/th/id/OIP.Zi-ThGo0rz238PsIljZEtgHaDm?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Generali Insurance Logo"
+              style={{ height: "50px", marginBottom: "10px" }}
+            />
+            <p style={{ fontSize: "14px", opacity: 0.8 }}>Generali Insurance</p>
           </div>
 
-          <div style={{ marginTop: "25px" }}>
-            <h3>Abl Solutions — Real‑Time IoT & Streaming Platform</h3>
-            <p>
-              Built a high‑throughput GCP‑based platform handling 10,000+ devices
-              with real‑time tracking and analytics.
-            </p>
+
+          {/* Citi */}
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2022/03/Citibank-Emblem.png"
+              alt="Citi Logo"
+              style={{ height: "50px", marginBottom: "10px" }}
+            />
+            <p style={{ fontSize: "14px", opacity: 0.8 }}>Citi</p>
           </div>
 
-          <div style={{ marginTop: "25px" }}>
-            <h3>EA, Virgin Media, BT — Enterprise Data Engineering</h3>
-            <p>
-              Delivered large‑scale pipelines, telemetry ingestion, and enterprise
-              DWH solutions across global teams.
-            </p>
           </div>
+
+          
+
+
         </section>
+
 
         {/* FOUNDER */}
         <section style={{ marginBottom: "60px" }}>
           <h2 style={{ fontSize: "30px", color: accent }}>About the Founder</h2>
           <p>
-            Abhishek Kumar is an Enterprise Data Architect with 15+ years of
+            Abhishek Kumar is an Enterprise Data Architect with 19+ years of
             experience across Germany, India, UK, and Finland. He has led
             large‑scale data transformations, designed modern cloud platforms, and
             enabled AI‑driven analytics for global enterprises.
@@ -174,11 +265,30 @@ export default function Home() {
             Precision‑Analytics is available for consulting engagements, enterprise
             architecture leadership, and strategic data platform initiatives.
           </p>
-          <p>
-            📧 <strong>abhishek_ku@yahoo.com</strong>
-            <br />
+        
+          <p style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+            📧 <strong>abhishek.kumar@outlook.de</strong>
+
             📞 <strong>+49 151 290 73 265</strong>
+
+            <span style={{ display: "flex", alignItems: "center", gap: "40px" }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                style={{ height: "18px" }}
+              />
+              <a
+                href="https://wa.me/4915129073265"
+                target="_blank"
+                style={{ color: accent, textDecoration: "none", fontWeight: "bold" }}
+              >
+                WhatsApp
+              </a>
+            </span>
           </p>
+        
+
+
         </section>
       </div>
     </div>
